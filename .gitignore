@@ -4,6 +4,11 @@
 *.o
 *.obj
 
+# DB files
+
+*.VC.opendb
+*.VC.db
+
 # Precompiled Headers
 *.gch
 *.pch
