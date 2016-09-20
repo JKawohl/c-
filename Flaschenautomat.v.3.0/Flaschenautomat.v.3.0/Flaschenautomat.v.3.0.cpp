@@ -42,9 +42,14 @@ int main()
 			cout << "Bitte werfen Sie ein Geldstueck ein " << endl;
 			cin >> einwurf;
 			zuZahlen -= einwurf;
-			cout << "Vielen Danke bitte entnehmen Sie ihr Getraenk!";
+			cout << "Vielen Danke bitte entnehmen Sie ihr Getraenk!" << endl;
 
 			} while (zuZahlen > 0.0);
+
+			// Getraenkeausgabe
+			cout << "-----Getraenkeausgabe -----" << endl;
+			int i;
+			for (i = 0; i < menge; i++) { cout << "Flasche " << i+1 << " von " << menge << " wurde ausgegeben" << endl; }
 		
 	}
 	else { cout << " Falsche Eingabe:Bitte waehlen Sie zwischen den drei Getraenken" << endl; }
