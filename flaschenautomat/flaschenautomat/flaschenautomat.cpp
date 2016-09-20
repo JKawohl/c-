@@ -12,12 +12,13 @@ int main()
 	cout << "Waehlen Sie Ihr Getraenk aus:" << endl;
 	int sorte = 0;
 	cout << "Waehlen sie ihr Getraenk aus:\n";
-	cout << "1) Wasser (0,50 Euro)\n";
-	cout << "2) Limonade (1,00 Euro)\n";
-	cout << "3) Bier (2,00 Euro)\n\n";
+	cout << "1) Wasser 0,50 Euro\n";
+	cout << "2) Limonade 1,00 Euro\n";
+	cout << "3) Bier 2,00 Euro\n\n";
 	cout << "Geben sie 1, 2 oder 3 ein: ";
 	
 	cin >> sorte;
+
 	if (sorte <= 3 && sorte > 0)
 	{
 		switch (sorte) {
@@ -39,6 +40,12 @@ int main()
 	case 3: preis = 2.0; break;
 		cout << preis;
 	}
+	// Aufforderung zur Bezahlung
+	
+	float einwurf = 0;
+	cout << "\nBitte werfen sie"<< preis << "Euro ein: ";
+	cin >> einwurf;
+
 
 		// ueberpruefe Geldstueck
 		if (sorte == preis) {
