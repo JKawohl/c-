@@ -29,7 +29,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="flaschenautomat.cpp">
+    <ClCompile Include="Flaschenautomat.v.3.0.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

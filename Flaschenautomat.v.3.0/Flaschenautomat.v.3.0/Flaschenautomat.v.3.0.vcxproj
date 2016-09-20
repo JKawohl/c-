@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F975D793-0F3F-462F-8DC2-8C9ED27B460B}</ProjectGuid>
+    <ProjectGuid>{637F24EE-63B2-47A9-BE02-DE89F699FDF7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>flaschenautomat</RootNamespace>
+    <RootNamespace>Flaschenautomatv30</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -149,7 +149,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="flaschenautomat.cpp" />
+    <ClCompile Include="Flaschenautomat.v.3.0.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

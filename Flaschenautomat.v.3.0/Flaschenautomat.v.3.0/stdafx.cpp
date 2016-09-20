@@ -1,5 +1,5 @@
 // stdafx.cpp : Quelldatei, die nur die Standard-Includes einbindet.
-// flaschenautomat.pch ist der vorkompilierte Header.
+// Flaschenautomat.v.3.0.pch ist der vorkompilierte Header.
 // stdafx.obj enthält die vorkompilierten Typinformationen.
 
 #include "stdafx.h"
