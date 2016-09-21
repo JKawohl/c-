@@ -7,12 +7,13 @@ using namespace std;
 int auswahlGetraenkeSorte();
 int eingabeMenge();
 float ermittlePreis(int sorte);
-bool bezahlen (float zuZahlen);
+void bezahlen (float zuZahlen);
 void ausgabeGetraenke(int sorte, int menge);
 
 int main()
 {
 	cout << "Getraenkeautomat v.6.0" << endl;
+
 	int sorte, menge, bezahlen;
 	float preis, zuZahlen;
 
@@ -20,7 +21,9 @@ int main()
 	preis = ermittlePreis(sorte);
 	menge = eingabeMenge();
 	zuZahlen = preis * menge;
-	bezahlen (zuZahlen);
+	float bezahlen(zuZahlen);
+	
+	
 	ausgabeGetraenke(sorte, menge);
 	cout << "Vielen Dank, bitte entnehmen Sie ihre Getränke" << endl;
 
