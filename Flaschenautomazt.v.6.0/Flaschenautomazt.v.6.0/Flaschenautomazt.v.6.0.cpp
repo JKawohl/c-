@@ -14,14 +14,14 @@ int main()
 {
 	cout << "Getraenkeautomat v.6.0" << endl;
 
-	int sorte, menge, bezahlen;
+	int sorte, menge;
 	float preis, zuZahlen;
 
 	sorte = auswahlGetraenkeSorte();
 	preis = ermittlePreis(sorte);
 	menge = eingabeMenge();
 	zuZahlen = preis * menge;
-	float bezahlen(zuZahlen);
+	bezahlen (zuZahlen);
 	
 	
 	ausgabeGetraenke(sorte, menge);
@@ -35,11 +35,11 @@ int main()
 // Funktionen
 int auswahlGetraenkeSorte() {
 	int sorte;
-	cout("Waehlen sie ihr Getraenk aus:\n");
-	cout("1) Wasser (0,50 Euro)\n");
-	cout("2) Limonade (1,00 Euro)\n");
-	cout("3) Bier (2,00 Euro)\n\n");
-	cout("Geben sie 1, 2 oder 3 ein: ");
+	cout <<"Waehlen sie ihr Getraenk aus:\n";
+	cout <<"1) Wasser (0,50 Euro)\n";
+	cout <<"2) Limonade (1,00 Euro)\n";
+	cout <<"3) Bier (2,00 Euro)\n\n";
+	cout <<"Geben sie 1, 2 oder 3 ein: ";
 	cin >> sorte;
 	return sorte;
 }
@@ -62,7 +62,7 @@ float ermittlePreis(int sorte) {
 	}
 	return preis;
 }
-bool bezahlen (float zuZahlen) {
+void bezahlen (float zuZahlen) {
 	cout << "--- Bezahlvorgang ---" << endl;
 	cout << "Bezahlvorgang abbrechen mit 0";
 	float einwurf;
@@ -73,7 +73,7 @@ bool bezahlen (float zuZahlen) {
 		// eingeworfenen Betrag anrechnen
 		zuZahlen -= einwurf;
 	} while (zuZahlen > 0.0);
-	return true;
+	return;
 }
 void ausgabeGetraenke(int sorte, int menge) {
 	cout << "--- Getraenkeausgabe ---" <<endl;
