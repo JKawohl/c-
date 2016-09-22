@@ -9,12 +9,13 @@ int eingabeMenge();
 float ermittlePreis(int sorte);
 void bezahlen (float zuZahlen);
 void ausgabeGetraenke(int sorte, int menge);
+int pruefeGeldstueck(float muenze);
 
 int main()
 {
 	cout << "Getraenkeautomat v.6.0" << endl;
 
-	int sorte, menge;
+	int sorte, menge, bezahlt;
 	float preis, zuZahlen;
 
 	sorte = auswahlGetraenkeSorte();
@@ -22,11 +23,17 @@ int main()
 	menge = eingabeMenge();
 	zuZahlen = preis * menge;
 	bezahlen (zuZahlen);
-	
-	
-	ausgabeGetraenke(sorte, menge);
-	cout << "Vielen Dank, bitte entnehmen Sie ihre Getränke" << endl;
 
+	if (preis >= zuZahlen) {
+		ausgabeGetraenke(sorte, menge);
+		cout << "Vielen Dank, bitte entnehmen Sie ihre Getränke" << endl;
+	}
+	else
+	{
+		cout << "Bezahlvorgang abgebrochen" << endl;
+		cout << "Bitte entnehmen Sie "  "Euro";
+	}
+	
 	getchar();
 	getchar();
 	return 0;
