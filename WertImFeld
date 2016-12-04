@@ -1,0 +1,47 @@
+//
+//  main.cpp
+//  wertImFeld
+//
+//  Created by b3nd3r on 01.12.16.
+//  Copyright © 2016 b3nd3r. All rights reserved.
+//
+
+#include <iostream>
+
+
+
+using namespace std;
+
+
+bool Wert_Ia_Array(int *pFeld, int  , int );
+bool Gefunden = false;
+int AnzahlGefunden = 0;
+
+int main() {
+    
+    int ai_Feld[6] = {2,3,2,3,2,3};
+
+    if(Wert_Ia_Array(ai_Feld,6,2)==true)
+        cout << Gefunden;
+    
+    
+                   
+    cin.sync();
+    cin.get();
+    return 0;
+}
+
+bool Wert_Ia_Array(int *pFeld, int laenge,int Pruefzahl)
+{
+    for(int k=0;k < laenge;k++)
+    {
+        if(Pruefzahl == *(pFeld+k) || Pruefzahl == pFeld[k])
+        {
+        AnzahlGefunden++;
+            cout << Gefunden+1 << "  Gefunden Index " << k << " = ai_Feld[" << k +1 << "] \n";
+        }else
+            cout << Gefunden << "  nicht Gefunden \n";
+    }
+    cout << "\n Die Prüfzahl " << Pruefzahl << " wurde " << AnzahlGefunden << " mal gefunden. \n";
+    return 0;
+}
